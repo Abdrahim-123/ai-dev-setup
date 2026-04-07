@@ -1,4 +1,4 @@
-Write-Host ""
+﻿Write-Host ""
 Write-Host "╔══════════════════════════════════════════════════════╗"
 Write-Host "║           🧠  AI Dev Setup — Session Start           ║"
 Write-Host "╚══════════════════════════════════════════════════════╝"

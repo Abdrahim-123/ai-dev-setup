@@ -1,4 +1,4 @@
-$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+﻿$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 $branch = git branch --show-current 2>$null
 if (-not $branch) { $branch = "unknown" }
 $recentFiles = git diff --name-only HEAD 2>$null | Select-Object -First 10
