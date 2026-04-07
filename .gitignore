@@ -1,3 +1,32 @@
+# AI session files — never commit
+SESSION_HANDOFF.md
+
+# code-review-graph database — rebuilt locally
+.code-review-graph/
+
+# Claude Code local settings — machine-specific permissions
+.claude/settings.local.json
+
+# Environment variables
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+
+
+
 # Logs
 logs
 *.log
