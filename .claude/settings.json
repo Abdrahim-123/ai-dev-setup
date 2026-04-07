@@ -1,0 +1,23 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hook": "powershell -File .claude/hooks/session-start.ps1"
+      }
+    ],
+    "Stop": [
+      {
+        "hook": "powershell -File .claude/hooks/generate-handoff.ps1"
+      },
+      {
+        "hook": "code-review-graph update"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hook": "code-review-graph update --file $CLAUDE_FILE_PATH 2>$null; exit 0"
+      }
+    ]
+  }
+}
