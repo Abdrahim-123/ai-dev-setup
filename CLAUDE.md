@@ -3,14 +3,11 @@
 ## Session Start Checklist
 1. Check SESSION_HANDOFF.md for pending work from last session
 2. Use graph MCP tools before reading any files — avoids token waste
-3. Consult PROJECT_STRUCTURE.md for architecture orientation
 
 ---
 
 ## Project Structure
-> Auto-managed by code-review-graph. Do NOT manually edit PROJECT_STRUCTURE.md.
-
-- Prefer graph_query MCP tools over raw find or directory traversal
+- Prefer graph MCP tools over raw file traversal (faster, fewer tokens)
 - Use blast radius analysis before any refactor
 - For full-codebase orientation, delegate to Gemini:
   /gemini-cli:ask-gemini "@src/ architecture overview"
